@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-01",
+  "platforms": {
+    "shopee": {
+      "templates": [
+        {
+          "name": "Shopee Marketplace Fee",
+          "lines": [
+            { "key": "platform_support", "label": "Platform Support Fee", "type": "fixed", "value": 0.50, "apply_sst": 1, "enabled": 1, "notes": "RM0.50 + 8% SST" },
+            { "key": "commission", "label": "Commission Fee", "type": "percent", "value": 0.04, "apply_sst": 1, "enabled": 1, "notes": "4% + 8% SST" },
+            { "key": "transaction_fee", "label": "Transaction Fee", "type": "percent", "value": 0.02, "apply_sst": 1, "enabled": 1, "notes": "2% + 8% SST" },
+            { "key": "cashback", "label": "Cashback Program", "type": "percent", "value": 0.075, "apply_sst": 1, "enabled": 0, "notes": "Optional" },
+            { "key": "livextra", "label": "LiveXtra Programme", "type": "percent", "value": 0.03, "apply_sst": 1, "enabled": 0, "notes": "3% + 8% SST" },
+            { "key": "seller_shipping", "label": "Seller Shipping Fee Programme", "type": "fixed", "value": 0.20, "apply_sst": 0, "enabled": 0, "notes": "RM0.20 per order" },
+            { "key": "ads_growth", "label": "Ads Growth Plan Fee", "type": "percent", "value": 0.02, "apply_sst": 1, "enabled": 0, "notes": "2% + 8% SST" }
+          ]
+        },
+        {
+          "name": "Shopee Mall Fee",
+          "lines": [
+            { "key": "platform_support", "label": "Platform Support Fee", "type": "fixed", "value": 0.50, "apply_sst": 1, "enabled": 1, "notes": "RM0.50 + 8% SST" },
+            { "key": "commission", "label": "Commission Fee", "type": "percent", "value": 0.11, "apply_sst": 1, "enabled": 1, "notes": "11% + 8% SST" },
+            { "key": "transaction_fee", "label": "Transaction Fee", "type": "percent", "value": 0.035, "apply_sst": 1, "enabled": 1, "notes": "3.5% + 8% SST (3.78% effective)" },
+            { "key": "cashback", "label": "Cashback Program", "type": "percent", "value": 0.075, "apply_sst": 1, "enabled": 1, "notes": "4.5% + 8% SST" },
+            { "key": "livextra", "label": "LiveXtra Programme", "type": "percent", "value": 0.03, "apply_sst": 1, "enabled": 0, "notes": "3% + 8% SST" },
+            { "key": "seller_shipping", "label": "Seller Shipping Fee Programme", "type": "fixed", "value": 0.20, "apply_sst": 0, "enabled": 0, "notes": "RM0.20 per order" },
+            { "key": "ads_growth", "label": "Ads Growth Plan Fee", "type": "percent", "value": 0.02, "apply_sst": 1, "enabled": 0, "notes": "2% + 8% SST" }
+          ]
+        }
+      ]
+    },
+    "lazada": {
+      "templates": [
+        {
+          "name": "Lazada Marketplace Fee",
+          "lines": [
+            { "key": "commission", "label": "Commission Fee", "type": "percent", "value": 0.19, "apply_sst": 1, "enabled": 1, "notes": "19% on (Price - LazCoins - Voucher) + SST" },
+            { "key": "payment_fee", "label": "Payment Fee", "type": "percent", "value": 0.035, "apply_sst": 1, "enabled": 1, "notes": "3.5% on full price + SST" }
+          ]
+        },
+        {
+          "name": "Lazada Mall Fee",
+          "lines": [
+            { "key": "commission", "label": "Commission Fee", "type": "percent", "value": 0.19, "apply_sst": 1, "enabled": 1, "notes": "19% on (Price - LazCoins - Voucher) + SST" },
+            { "key": "payment_fee", "label": "Payment Fee", "type": "percent", "value": 0.035, "apply_sst": 1, "enabled": 1, "notes": "3.5% on full price + SST" }
+          ]
+        }
+      ]
+    }
+  },
+  "notes": "Edit this file to update fee defaults. Use 'Sync from Config' in the app to apply changes."
+}
